@@ -9,6 +9,7 @@ int main() {
     std::cout << "P3\n" << kImageWidth << ' ' << kImageHeight << "\n255\n";
 
     for (int j = kImageHeight-1; j >= 0; --j) {
+        std::cerr << "Scanlines remaining: " << j << ' ' << std::flush;
         for (int i = 0; i < kImageWidth; ++i) {
             auto r = double(i) / (kImageWidth-1);
             auto g = double(j) / (kImageHeight-1);
@@ -21,4 +22,5 @@ int main() {
             std::cout << ir << ' ' << ig << ' ' << ib << '\n';
         }
     }
+    std::cerr << "\nDone.\n";
 }
