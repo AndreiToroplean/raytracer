@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Workspace files
+.vscode
+
+# Program outputs
+outputs
