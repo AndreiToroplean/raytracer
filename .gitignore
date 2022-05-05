@@ -34,5 +34,6 @@
 # Workspace files
 .vscode
 
-# Program outputs
+# Excluded directories
 outputs
+build
